@@ -1,0 +1,401 @@
+customer_id,signup_date,initial_plan,acquisition_channel,industry,company_size_employees
+CUST-0001,30-Apr-2024,Pro,Outbound Sales,Education,150
+CUST-0002,2023-07-17,Growth,Partner,Manufacturing,1000
+CUST-0003,2023-09-08,Growth,Partner,Education,20
+CUST-0004,18-Mar-2024,Starter,Outbound Sales,Retail,1000
+CUST-0005,2023-06-05,Growth,Organic,Manufacturing,5
+CUST-0006,2023-11-30,Starter,Paid Search,Technology,150
+CUST-0007,21-Jan-2024,Pro,Referral,Finance,50
+CUST-0008,22-Jul-2022,Enterprise,Organic,Finance,150
+CUST-0009,02/19/2022,Pro,Referral,Education,150
+CUST-0010,28-Sep-2022,Starter,Organic,Technology,20
+CUST-0011,14-Sep-2022,Starter,Referral,Technology,5
+CUST-0012,26-Feb-2024,Starter,Organic,Manufacturing,150
+CUST-0013,2024-04-01,Starter,Paid Search,Retail,1000
+CUST-0014,2022-01-05,Growth,Paid Search,Manufacturing,20
+CUST-0015,03/26/2023,Pro,Partner,Finance,150
+CUST-0016,2024-01-10,Starter,Referral,Healthcare,5
+CUST-0017,2022-04-29,Pro,Referral,Healthcare,50
+CUST-0018,12/19/2023,Pro,Partner,Finance,5
+CUST-0019,18-Apr-2022,Starter,Organic,Healthcare,5
+CUST-0020,26-Feb-2023,Pro,Paid Search,Manufacturing,400
+CUST-0021,01/05/2024,Pro,Referral,Finance,1000
+CUST-0022,30-Sep-2022,Starter,Partner,Manufacturing,1000
+CUST-0023,11/04/2022,Growth,Outbound Sales,Technology,400
+CUST-0024,2022-09-08,Growth,Outbound Sales,Finance,5
+CUST-0025,10/10/2023,Growth,Paid Search,Finance,1000
+CUST-0026,18-Aug-2022,Starter,Partner,Manufacturing,5
+CUST-0027,10-Jun-2024,Growth,Organic,Education,20
+CUST-0028,05-Feb-2023,Growth,Referral,Finance,20
+CUST-0029,03/07/2023,Pro,Paid Search,Technology,400
+CUST-0030,31-Mar-2023,Pro,Organic,Finance,5
+CUST-0031,06/09/2023,Starter,Organic,Healthcare,1000
+CUST-0032,14-May-2023,Pro,Outbound Sales,Technology,20
+CUST-0033,04/04/2023,Pro,Partner,Retail,1000
+CUST-0034,14-Jun-2024,Pro,Paid Search,Finance,150
+CUST-0035,28-Dec-2023,Starter,Organic,Finance,20
+CUST-0036,15-Dec-2023,Starter,Organic,Finance,50
+CUST-0037,23-Sep-2023,Growth,Organic,Healthcare,5
+CUST-0038,07/14/2023,Starter,Outbound Sales,Finance,50
+CUST-0039,03-Nov-2022,Growth,Organic,Retail,400
+CUST-0040,2024-06-09,Enterprise,Outbound Sales,Finance,20
+CUST-0041,02/24/2023,Starter,Outbound Sales,Technology,1000
+CUST-0042,13-Jul-2022,Starter,Paid Search,Retail,150
+CUST-0043,01/31/2024,Growth,Paid Search,Retail,50
+CUST-0044,2022-05-25,Growth,Paid Search,Retail,20
+CUST-0045,11-Feb-2024,Starter,Outbound Sales,Technology,400
+CUST-0046,07/06/2023,Starter,Partner,Technology,50
+CUST-0047,14-Apr-2022,Starter,Outbound Sales,Retail,1000
+CUST-0048,09-Feb-2022,Growth,Paid Search,Education,50
+CUST-0049,2023-02-05,Pro,Outbound Sales,Finance,400
+CUST-0050,02/02/2022,Starter,Outbound Sales,Technology,1000
+CUST-0051,2022-05-08,Starter,Referral,Finance,1000
+CUST-0052,04/09/2023,Growth,Organic,Technology,20
+CUST-0053,23-May-2024,Starter,Paid Search,Education,50
+CUST-0054,24-Feb-2023,Starter,Partner,Healthcare,400
+CUST-0055,29-Dec-2023,Starter,Referral,Education,50
+CUST-0056,2024-04-05,Growth,Organic,Healthcare,20
+CUST-0057,01/12/2024,Starter,Partner,Education,150
+CUST-0058,21-Jul-2023,Pro,Referral,Healthcare,1000
+CUST-0059,02-Feb-2023,Growth,Paid Search,Finance,50
+CUST-0060,08-Apr-2023,Starter,Organic,Healthcare,50
+CUST-0061,2022-08-28,Starter,Referral,Education,400
+CUST-0062,03/24/2023,Pro,Referral,Technology,150
+CUST-0063,08-Dec-2022,Starter,Organic,Technology,20
+CUST-0064,2022-08-11,Starter,Partner,Finance,1000
+CUST-0065,12-Jun-2024,Starter,Referral,Finance,150
+CUST-0066,2022-01-11,Starter,Organic,Healthcare,400
+CUST-0067,2022-03-29,Enterprise,Organic,Healthcare,400
+CUST-0068,23-Jun-2022,Starter,Paid Search,Education,5
+CUST-0069,2024-05-22,Starter,Outbound Sales,Technology,1000
+CUST-0070,2023-09-15,Pro,Outbound Sales,Healthcare,5
+CUST-0071,2024-03-04,Growth,Partner,Healthcare,5
+CUST-0072,2022-06-30,Starter,Outbound Sales,Retail,1000
+CUST-0073,11-Oct-2023,Growth,Partner,Manufacturing,20
+CUST-0074,29-Nov-2022,Pro,Paid Search,Technology,5
+CUST-0075,2023-03-17,Starter,Referral,Retail,400
+CUST-0076,01/04/2022,Pro,Outbound Sales,Technology,20
+CUST-0077,07/10/2023,Starter,Paid Search,Healthcare,50
+CUST-0078,18-Jan-2024,Pro,Referral,Healthcare,1000
+CUST-0079,21-Aug-2023,Pro,Outbound Sales,Finance,150
+CUST-0080,20-May-2022,Pro,Partner,Education,5
+CUST-0081,2023-04-26,Growth,Partner,Education,400
+CUST-0082,2022-08-29,Starter,Paid Search,Retail,5
+CUST-0083,18-May-2024,Starter,Outbound Sales,Technology,20
+CUST-0084,2024-03-03,Growth,Outbound Sales,Finance,20
+CUST-0085,06/17/2022,Pro,Partner,Manufacturing,1000
+CUST-0086,04/04/2023,Starter,Outbound Sales,Education,5
+CUST-0087,04/25/2024,Starter,Paid Search,Manufacturing,150
+CUST-0088,2024-02-02,Growth,Outbound Sales,Healthcare,50
+CUST-0089,2023-09-30,Pro,Organic,Education,150
+CUST-0090,07/30/2023,Pro,Paid Search,Finance,150
+CUST-0091,2022-02-07,Starter,Referral,Manufacturing,5
+CUST-0092,30-Oct-2023,Starter,Outbound Sales,Education,20
+CUST-0093,03-Mar-2023,Pro,Organic,Technology,150
+CUST-0094,03/24/2022,Growth,Outbound Sales,Education,5
+CUST-0095,09-Aug-2022,Pro,Organic,Technology,400
+CUST-0096,05/03/2023,Enterprise,Paid Search,Retail,400
+CUST-0097,17-Oct-2023,Enterprise,Organic,Healthcare,150
+CUST-0098,2023-04-02,Pro,Organic,Technology,400
+CUST-0099,07/06/2023,Pro,Paid Search,Healthcare,50
+CUST-0100,2024-02-24,Starter,Partner,Retail,150
+CUST-0101,2023-09-10,Growth,Referral,Education,50
+CUST-0102,22-Nov-2022,Starter,Outbound Sales,Manufacturing,5
+CUST-0103,02-Aug-2023,Pro,Paid Search,Healthcare,20
+CUST-0104,2023-06-23,Pro,Paid Search,Healthcare,150
+CUST-0105,08-Apr-2022,Pro,Partner,Technology,5
+CUST-0106,02/23/2022,Growth,Outbound Sales,Healthcare,150
+CUST-0107,08/18/2023,Starter,Referral,Technology,20
+CUST-0108,2022-12-15,Growth,Paid Search,Healthcare,50
+CUST-0109,23-Jun-2023,Starter,Partner,Healthcare,1000
+CUST-0110,18-Oct-2022,Pro,Referral,Manufacturing,1000
+CUST-0111,23-Jul-2022,Growth,Organic,Education,50
+CUST-0112,2022-05-16,Starter,Partner,Healthcare,50
+CUST-0113,12/10/2022,Growth,Referral,Finance,400
+CUST-0114,01/05/2024,Pro,Referral,Education,150
+CUST-0115,12/27/2022,Starter,Paid Search,Retail,400
+CUST-0116,12/08/2022,Pro,Paid Search,Manufacturing,5
+CUST-0117,02-Jun-2023,Enterprise,Outbound Sales,Finance,400
+CUST-0118,30-May-2024,Starter,Paid Search,Manufacturing,150
+CUST-0119,2022-12-20,Starter,Referral,Technology,20
+CUST-0120,15-Jun-2023,Pro,Organic,Retail,400
+CUST-0121,01/31/2023,Enterprise,Partner,Technology,150
+CUST-0122,29-Jun-2023,Starter,Paid Search,Education,400
+CUST-0123,06-Feb-2023,Pro,Outbound Sales,Manufacturing,400
+CUST-0124,07/29/2023,Pro,Paid Search,Education,20
+CUST-0125,08-May-2023,Enterprise,Organic,Healthcare,400
+CUST-0126,2023-09-01,Starter,Organic,Technology,1000
+CUST-0127,2024-05-11,Starter,Outbound Sales,Healthcare,150
+CUST-0128,16-May-2022,Enterprise,Organic,Finance,400
+CUST-0129,21-May-2023,Starter,Outbound Sales,Education,400
+CUST-0130,01-Feb-2023,Starter,Referral,Healthcare,50
+CUST-0131,11/19/2022,Growth,Referral,Manufacturing,400
+CUST-0132,2022-08-04,Growth,Paid Search,Retail,50
+CUST-0133,02/17/2022,Pro,Paid Search,Finance,1000
+CUST-0134,29-Dec-2022,Starter,Outbound Sales,Retail,400
+CUST-0135,2024-01-14,Enterprise,Partner,Technology,150
+CUST-0136,2022-03-29,Starter,Partner,Education,20
+CUST-0137,01/01/2023,Pro,Outbound Sales,Retail,400
+CUST-0138,05/21/2024,Starter,Paid Search,Retail,150
+CUST-0139,05/06/2024,Growth,Organic,Technology,150
+CUST-0140,07/13/2022,Starter,Referral,Healthcare,400
+CUST-0141,01/07/2022,Starter,Referral,Manufacturing,1000
+CUST-0142,08/28/2023,Starter,Referral,Healthcare,150
+CUST-0143,01/13/2022,Pro,Referral,Education,50
+CUST-0144,28-Sep-2022,Growth,Organic,Retail,1000
+CUST-0145,03/24/2023,Starter,Paid Search,Education,150
+CUST-0146,26-Feb-2024,Enterprise,Organic,Retail,50
+CUST-0147,03/25/2022,Pro,Partner,Healthcare,20
+CUST-0148,08/19/2023,Enterprise,Partner,Manufacturing,50
+CUST-0149,04/25/2023,Starter,Partner,Manufacturing,1000
+CUST-0150,29-Apr-2022,Starter,Referral,Finance,20
+CUST-0151,02/01/2024,Starter,Partner,Manufacturing,1000
+CUST-0152,01/31/2024,Starter,Partner,Healthcare,1000
+CUST-0153,03/11/2023,Starter,Paid Search,Education,1000
+CUST-0154,04/30/2024,Growth,Organic,Technology,20
+CUST-0155,01-Jul-2023,Starter,Partner,Manufacturing,400
+CUST-0156,03/24/2024,Starter,Referral,Retail,400
+CUST-0157,2024-05-14,Pro,Referral,Education,1000
+CUST-0158,05/28/2023,Growth,Partner,Healthcare,50
+CUST-0159,10-Sep-2022,Starter,Partner,Finance,150
+CUST-0160,2022-05-11,Growth,Partner,Manufacturing,1000
+CUST-0161,2023-05-22,Starter,Organic,Education,1000
+CUST-0162,2022-06-23,Growth,Organic,Manufacturing,1000
+CUST-0163,07-Nov-2023,Starter,Referral,Healthcare,5
+CUST-0164,2024-04-15,Growth,Referral,Education,5
+CUST-0165,08/09/2022,Growth,Paid Search,Manufacturing,5
+CUST-0166,05/13/2023,Growth,Paid Search,Retail,1000
+CUST-0167,02/14/2022,Starter,Referral,Manufacturing,50
+CUST-0168,2022-06-12,Pro,Outbound Sales,Healthcare,150
+CUST-0169,06-Dec-2022,Pro,Outbound Sales,Finance,50
+CUST-0170,06-Mar-2024,Starter,Organic,Retail,5
+CUST-0171,05/22/2024,Starter,Paid Search,Manufacturing,1000
+CUST-0172,01-Aug-2023,Starter,Paid Search,Healthcare,50
+CUST-0173,2023-06-10,Enterprise,Paid Search,Manufacturing,20
+CUST-0174,05/28/2023,Enterprise,Partner,Retail,5
+CUST-0175,24-Feb-2022,Starter,Referral,Retail,5
+CUST-0176,12/05/2022,Enterprise,Referral,Retail,150
+CUST-0177,2024-06-03,Starter,Partner,Technology,400
+CUST-0178,05-Jan-2023,Growth,Referral,Education,20
+CUST-0179,11-Jul-2022,Growth,Outbound Sales,Healthcare,150
+CUST-0180,08/04/2022,Enterprise,Partner,Retail,50
+CUST-0181,2023-10-05,Starter,Partner,Healthcare,150
+CUST-0182,02/04/2022,Starter,Paid Search,Retail,20
+CUST-0183,05/22/2024,Growth,Referral,Technology,1000
+CUST-0184,02/28/2024,Starter,Organic,Manufacturing,150
+CUST-0185,26-May-2023,Starter,Outbound Sales,Finance,20
+CUST-0186,02/25/2023,Growth,Paid Search,Finance,400
+CUST-0187,17-Nov-2023,Pro,Organic,Education,150
+CUST-0188,08-May-2023,Pro,Organic,Healthcare,1000
+CUST-0189,06-Mar-2023,Pro,Organic,Healthcare,1000
+CUST-0190,2022-10-17,Pro,Organic,Retail,20
+CUST-0191,2023-02-07,Pro,Organic,Education,400
+CUST-0192,08-Nov-2023,Pro,Referral,Technology,150
+CUST-0193,19-Feb-2022,Growth,Paid Search,Education,50
+CUST-0194,01/23/2022,Pro,Partner,Technology,5
+CUST-0195,2023-10-11,Starter,Referral,Retail,400
+CUST-0196,01-Dec-2022,Starter,Referral,Education,50
+CUST-0197,2023-12-25,Pro,Referral,Technology,5
+CUST-0198,01/28/2022,Starter,Outbound Sales,Education,1000
+CUST-0199,03/27/2024,Enterprise,Outbound Sales,Retail,50
+CUST-0200,21-Apr-2022,Growth,Paid Search,Retail,5
+CUST-0201,10-Jan-2023,Starter,Outbound Sales,Manufacturing,50
+CUST-0202,2024-05-20,Enterprise,Referral,Healthcare,1000
+CUST-0203,08-Apr-2022,Starter,Outbound Sales,Healthcare,400
+CUST-0204,15-Aug-2023,Growth,Outbound Sales,Education,150
+CUST-0205,2023-10-18,Starter,Outbound Sales,Technology,20
+CUST-0206,2023-01-21,Enterprise,Referral,Manufacturing,20
+CUST-0207,03/13/2022,Growth,Organic,Technology,20
+CUST-0208,04/17/2023,Pro,Partner,Technology,400
+CUST-0209,2023-01-26,Starter,Partner,Manufacturing,400
+CUST-0210,25-Feb-2024,Pro,Referral,Education,20
+CUST-0211,09/07/2023,Pro,Referral,Education,20
+CUST-0212,2022-11-06,Growth,Organic,Education,1000
+CUST-0213,22-Feb-2022,Enterprise,Referral,Healthcare,1000
+CUST-0214,2023-06-16,Growth,Referral,Retail,5
+CUST-0215,09-Sep-2022,Growth,Outbound Sales,Retail,20
+CUST-0216,08-Sep-2023,Growth,Referral,Manufacturing,5
+CUST-0217,2024-02-17,Pro,Organic,Healthcare,50
+CUST-0218,16-Nov-2022,Starter,Organic,Retail,400
+CUST-0219,2024-03-24,Growth,Referral,Retail,150
+CUST-0220,04/13/2023,Starter,Outbound Sales,Retail,50
+CUST-0221,2023-04-23,Growth,Partner,Finance,20
+CUST-0222,2023-11-20,Pro,Partner,Technology,5
+CUST-0223,2023-12-12,Starter,Referral,Technology,400
+CUST-0224,03/29/2024,Pro,Organic,Technology,150
+CUST-0225,06/18/2024,Starter,Partner,Manufacturing,5
+CUST-0226,2022-05-16,Enterprise,Referral,Technology,20
+CUST-0227,2023-01-07,Growth,Partner,Healthcare,400
+CUST-0228,04/20/2024,Growth,Outbound Sales,Finance,150
+CUST-0229,04-Oct-2022,Pro,Paid Search,Education,400
+CUST-0230,01/05/2022,Growth,Referral,Healthcare,400
+CUST-0231,2023-06-03,Pro,Referral,Technology,5
+CUST-0232,11/09/2023,Starter,Paid Search,Retail,1000
+CUST-0233,2023-10-31,Growth,Outbound Sales,Healthcare,150
+CUST-0234,12/31/2023,Growth,Paid Search,Manufacturing,5
+CUST-0235,08/03/2023,Enterprise,Outbound Sales,Healthcare,1000
+CUST-0236,2022-05-04,Starter,Referral,Manufacturing,150
+CUST-0237,02-Feb-2024,Growth,Referral,Manufacturing,20
+CUST-0238,13-Jan-2023,Growth,Outbound Sales,Healthcare,1000
+CUST-0239,2024-02-02,Growth,Organic,Manufacturing,5
+CUST-0240,01/04/2024,Starter,Referral,Manufacturing,50
+CUST-0241,2024-05-23,Growth,Organic,Manufacturing,5
+CUST-0242,13-Jan-2022,Starter,Organic,Finance,400
+CUST-0243,02/19/2024,Starter,Partner,Manufacturing,400
+CUST-0244,07/20/2023,Pro,Partner,Healthcare,5
+CUST-0245,2023-03-13,Starter,Outbound Sales,Finance,20
+CUST-0246,2023-12-15,Growth,Partner,Education,1000
+CUST-0247,2024-05-06,Pro,Outbound Sales,Finance,20
+CUST-0248,04/07/2023,Pro,Organic,Retail,150
+CUST-0249,20-Mar-2022,Growth,Paid Search,Technology,150
+CUST-0250,10/16/2023,Pro,Paid Search,Finance,1000
+CUST-0251,2022-07-27,Growth,Outbound Sales,Technology,400
+CUST-0252,23-Jul-2022,Growth,Organic,Healthcare,400
+CUST-0253,06/23/2022,Pro,Outbound Sales,Healthcare,5
+CUST-0254,28-Jun-2022,Growth,Partner,Technology,1000
+CUST-0255,2024-03-29,Growth,Organic,Technology,50
+CUST-0256,2022-11-23,Growth,Partner,Education,5
+CUST-0257,2022-04-06,Growth,Outbound Sales,Education,5
+CUST-0258,11-Jun-2022,Starter,Organic,Manufacturing,400
+CUST-0259,12/22/2022,Pro,Referral,Manufacturing,1000
+CUST-0260,2022-11-08,Starter,Paid Search,Manufacturing,20
+CUST-0261,10/07/2022,Growth,Outbound Sales,Manufacturing,20
+CUST-0262,03-May-2024,Pro,Organic,Healthcare,20
+CUST-0263,02/19/2024,Growth,Referral,Technology,1000
+CUST-0264,05/31/2023,Starter,Referral,Healthcare,20
+CUST-0265,06/06/2024,Pro,Referral,Manufacturing,150
+CUST-0266,2022-11-03,Starter,Partner,Manufacturing,150
+CUST-0267,05/04/2022,Pro,Partner,Finance,50
+CUST-0268,09/02/2022,Pro,Organic,Education,150
+CUST-0269,2022-03-22,Growth,Outbound Sales,Retail,20
+CUST-0270,05/06/2024,Pro,Organic,Retail,1000
+CUST-0271,07/17/2022,Starter,Organic,Healthcare,1000
+CUST-0272,05-Feb-2023,Starter,Referral,Retail,5
+CUST-0273,2022-07-01,Pro,Partner,Finance,50
+CUST-0274,06/01/2024,Growth,Referral,Manufacturing,20
+CUST-0275,2022-05-23,Growth,Referral,Technology,50
+CUST-0276,09-Apr-2023,Growth,Outbound Sales,Education,50
+CUST-0277,05-May-2024,Growth,Referral,Technology,1000
+CUST-0278,04/15/2023,Growth,Referral,Retail,400
+CUST-0279,2024-03-20,Growth,Outbound Sales,Education,20
+CUST-0280,17-Mar-2024,Starter,Organic,Education,150
+CUST-0281,2023-11-23,Starter,Partner,Retail,50
+CUST-0282,10/31/2023,Starter,Paid Search,Education,150
+CUST-0283,06/03/2023,Growth,Referral,Education,1000
+CUST-0284,06/07/2023,Enterprise,Partner,Finance,400
+CUST-0285,2024-01-19,Starter,Outbound Sales,Manufacturing,5
+CUST-0286,01/19/2023,Growth,Outbound Sales,Manufacturing,150
+CUST-0287,05/01/2024,Starter,Partner,Finance,400
+CUST-0288,03/01/2024,Growth,Organic,Manufacturing,20
+CUST-0289,12/03/2022,Enterprise,Referral,Healthcare,400
+CUST-0290,2023-01-06,Pro,Partner,Retail,5
+CUST-0291,2023-10-05,Starter,Paid Search,Education,5
+CUST-0292,04/10/2024,Starter,Paid Search,Retail,50
+CUST-0293,28-Mar-2022,Pro,Partner,Healthcare,50
+CUST-0294,2022-03-03,Growth,Outbound Sales,Finance,1000
+CUST-0295,2022-08-12,Growth,Paid Search,Technology,400
+CUST-0296,01/22/2023,Starter,Organic,Manufacturing,150
+CUST-0297,2022-05-27,Pro,Referral,Manufacturing,150
+CUST-0298,2023-04-13,Starter,Partner,Education,5
+CUST-0299,03-May-2023,Growth,Referral,Manufacturing,20
+CUST-0300,05/05/2024,Starter,Organic,Technology,50
+CUST-0301,03-Nov-2023,Growth,Referral,Manufacturing,50
+CUST-0302,14-Aug-2022,Pro,Referral,Education,50
+CUST-0303,12/09/2023,Pro,Outbound Sales,Retail,150
+CUST-0304,12/27/2023,Growth,Outbound Sales,Healthcare,150
+CUST-0305,2023-09-04,Pro,Paid Search,Finance,50
+CUST-0306,2023-09-01,Growth,Referral,Technology,150
+CUST-0307,2022-10-07,Starter,Referral,Finance,5
+CUST-0308,10/08/2023,Growth,Organic,Retail,1000
+CUST-0309,05/02/2022,Starter,Referral,Finance,150
+CUST-0310,2023-07-21,Starter,Organic,Technology,50
+CUST-0311,2024-04-08,Pro,Organic,Manufacturing,50
+CUST-0312,24-May-2024,Pro,Paid Search,Healthcare,50
+CUST-0313,2022-09-26,Starter,Partner,Healthcare,20
+CUST-0314,2022-10-27,Pro,Organic,Finance,150
+CUST-0315,2023-07-12,Pro,Partner,Finance,1000
+CUST-0316,12/25/2022,Growth,Paid Search,Manufacturing,1000
+CUST-0317,10/20/2023,Starter,Partner,Finance,20
+CUST-0318,07/02/2022,Growth,Organic,Education,400
+CUST-0319,2022-06-02,Starter,Outbound Sales,Healthcare,400
+CUST-0320,2022-02-15,Growth,Referral,Retail,50
+CUST-0321,2023-02-27,Starter,Paid Search,Finance,400
+CUST-0322,2022-07-11,Growth,Paid Search,Finance,400
+CUST-0323,27-Sep-2022,Starter,Referral,Healthcare,5
+CUST-0324,2024-04-03,Growth,Referral,Education,50
+CUST-0325,01/03/2024,Growth,Outbound Sales,Healthcare,5
+CUST-0326,27-Jan-2024,Growth,Paid Search,Retail,1000
+CUST-0327,06/18/2023,Starter,Paid Search,Education,150
+CUST-0328,12-Apr-2022,Enterprise,Organic,Healthcare,20
+CUST-0329,11/04/2023,Starter,Paid Search,Technology,5
+CUST-0330,06/28/2023,Starter,Paid Search,Retail,5
+CUST-0331,28-Mar-2024,Starter,Partner,Technology,20
+CUST-0332,08-Mar-2023,Starter,Outbound Sales,Education,400
+CUST-0333,06/05/2022,Growth,Outbound Sales,Technology,1000
+CUST-0334,2023-06-20,Pro,Paid Search,Finance,20
+CUST-0335,2023-02-15,Pro,Paid Search,Manufacturing,50
+CUST-0336,08/17/2023,Starter,Referral,Education,1000
+CUST-0337,12/05/2022,Starter,Referral,Manufacturing,5
+CUST-0338,10/03/2022,Starter,Outbound Sales,Healthcare,150
+CUST-0339,2022-04-23,Pro,Partner,Manufacturing,150
+CUST-0340,2024-05-15,Growth,Referral,Education,150
+CUST-0341,11/11/2023,Enterprise,Paid Search,Manufacturing,1000
+CUST-0342,24-Feb-2023,Growth,Partner,Healthcare,5
+CUST-0343,07/30/2022,Growth,Referral,Education,20
+CUST-0344,20-Jul-2023,Pro,Partner,Manufacturing,400
+CUST-0345,06-Jan-2023,Pro,Paid Search,Healthcare,20
+CUST-0346,2023-07-26,Starter,Paid Search,Manufacturing,5
+CUST-0347,23-Mar-2022,Starter,Organic,Manufacturing,50
+CUST-0348,2022-06-15,Growth,Outbound Sales,Finance,1000
+CUST-0349,2023-10-24,Growth,Referral,Technology,400
+CUST-0350,25-Feb-2022,Starter,Paid Search,Finance,1000
+CUST-0351,2023-09-02,Growth,Referral,Education,20
+CUST-0352,06-Jan-2023,Growth,Organic,Manufacturing,20
+CUST-0353,2022-01-03,Starter,Partner,Technology,5
+CUST-0354,11/19/2023,Starter,Referral,Healthcare,5
+CUST-0355,2023-09-22,Starter,Paid Search,Education,20
+CUST-0356,04-Jan-2024,Starter,Outbound Sales,Technology,1000
+CUST-0357,16-Mar-2024,Enterprise,Outbound Sales,Education,400
+CUST-0358,19-Oct-2023,Starter,Partner,Healthcare,50
+CUST-0359,27-Jan-2024,Starter,Outbound Sales,Technology,50
+CUST-0360,12-Apr-2022,Starter,Organic,Technology,5
+CUST-0361,06-Apr-2024,Growth,Referral,Education,50
+CUST-0362,04/02/2024,Starter,Outbound Sales,Finance,50
+CUST-0363,2023-09-17,Growth,Partner,Education,400
+CUST-0364,2023-12-23,Starter,Referral,Education,20
+CUST-0365,10/30/2023,Starter,Partner,Healthcare,1000
+CUST-0366,02/29/2024,Pro,Organic,Manufacturing,50
+CUST-0367,11-Mar-2024,Starter,Paid Search,Education,5
+CUST-0368,04/16/2023,Growth,Partner,Retail,150
+CUST-0369,2024-01-05,Growth,Organic,Healthcare,150
+CUST-0370,04-Apr-2024,Growth,Outbound Sales,Technology,1000
+CUST-0371,25-Sep-2022,Pro,Paid Search,Technology,150
+CUST-0372,2022-02-11,Starter,Organic,Education,400
+CUST-0373,2022-06-03,Enterprise,Organic,Finance,20
+CUST-0374,01/28/2022,Pro,Partner,Finance,5
+CUST-0375,27-Jan-2023,Growth,Partner,Manufacturing,150
+CUST-0376,2022-01-19,Starter,Organic,Finance,50
+CUST-0377,2022-08-22,Growth,Outbound Sales,Technology,400
+CUST-0378,16-Aug-2022,Growth,Organic,Retail,50
+CUST-0379,09/29/2023,Pro,Partner,Education,400
+CUST-0380,08/12/2022,Starter,Paid Search,Healthcare,1000
+CUST-0381,04-May-2024,Enterprise,Organic,Finance,1000
+CUST-0382,18-Jun-2022,Pro,Partner,Education,5
+CUST-0383,2024-05-24,Starter,Partner,Retail,1000
+CUST-0384,2023-05-26,Starter,Organic,Retail,150
+CUST-0385,2022-08-08,Starter,Paid Search,Education,50
+CUST-0386,02/05/2022,Pro,Partner,Technology,1000
+CUST-0387,10/03/2022,Enterprise,Paid Search,Retail,20
+CUST-0388,16-Jun-2023,Enterprise,Outbound Sales,Manufacturing,50
+CUST-0389,2022-04-09,Growth,Partner,Finance,400
+CUST-0390,05/30/2022,Growth,Organic,Manufacturing,20
+CUST-0391,04/14/2022,Growth,Referral,Retail,1000
+CUST-0392,2023-09-03,Growth,Referral,Manufacturing,150
+CUST-0393,2022-03-21,Enterprise,Partner,Education,150
+CUST-0394,01/19/2022,Growth,Referral,Technology,20
+CUST-0395,15-Feb-2023,Starter,Partner,Technology,5
+CUST-0396,07-Oct-2022,Growth,Referral,Healthcare,1000
+CUST-0397,29-May-2023,Starter,Referral,Healthcare,5
+CUST-0398,2024-04-24,Pro,Outbound Sales,Manufacturing,5
+CUST-0399,02/11/2024,Growth,Partner,Finance,5
+CUST-0400,2023-04-30,Growth,Outbound Sales,Healthcare,20
