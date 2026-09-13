@@ -1,0 +1,17 @@
+version: 2
+
+seeds:
+  - name: customers
+    config:
+      column_types:
+        signup_date: varchar
+
+  - name: subscription_events
+    config:
+      column_types:
+        event_date: varchar
+
+  - name: usage_events
+    config:
+      column_types:
+        usage_month: varchar
