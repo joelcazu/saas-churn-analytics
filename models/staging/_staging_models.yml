@@ -1,0 +1,50 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "One row per customer. Signup dates parsed from three raw formats; plans title-cased."
+    columns:
+      - name: customer_id
+        data_tests:
+          - unique
+          - not_null
+      - name: signup_date
+        data_tests:
+          - not_null
+      - name: initial_plan
+        data_tests:
+          - accepted_values:
+              values: ['Starter', 'Growth', 'Pro', 'Enterprise']
+
+  - name: stg_subscription_events
+    description: "One row per deduplicated subscription event. Direction derived from plan hierarchy because source labels are unreliable."
+    columns:
+      - name: event_id
+        data_tests:
+          - unique
+          - not_null
+      - name: event_date
+        data_tests:
+          - not_null
+      - name: customer_id
+        data_tests:
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+      - name: event_type
+        data_tests:
+          - accepted_values:
+              values: ['upgrade', 'downgrade', 'cancellation']
+
+  - name: stg_usage_events
+    description: "One row per customer per month. Null logins preserved and flagged via is_login_gap."
+    columns:
+      - name: customer_id
+        data_tests:
+          - not_null
+      - name: usage_month
+        data_tests:
+          - not_null
+      - name: active_users
+        data_tests:
+          - not_null
