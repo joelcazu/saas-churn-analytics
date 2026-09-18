@@ -4,7 +4,7 @@ An end-to-end analytics engineering project: raw, intentionally messy
 CRM/billing/usage exports → tested dbt models → star-schema marts →
 live dashboard. Built with dbt-core, DuckDB, and Streamlit.
 
-**Live dashboard:** [link]
+**Live dashboard:** [Link](https://saas-churn-analytics-gfjm5kcix5hdybraxdrb38.streamlit.app/)
 
 ## The data problem
 - 3 source files, ~660 events, ~12k usage rows, 400 customers
