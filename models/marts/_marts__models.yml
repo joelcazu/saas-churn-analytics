@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: "One row per customer with current plan, churn status, and latest risk segment."
+    columns:
+      - name: customer_id
+        data_tests:
+          - unique
+          - not_null
+
+  - name: fact_customer_month
+    description: "One row per customer per calendar month. is_active = monthly_logins > 0."
+    columns:
+      - name: customer_month_key
+        data_tests:
+          - unique
+          - not_null
+      - name: customer_id
+        data_tests:
+          - relationships:
+              to: ref('dim_customer')
+              field: customer_id
+
+  - name: fact_subscription_event
+    description: "One row per deduplicated event. mrr_delta uses assumed plan pricing."
+    columns:
+      - name: event_id
+        data_tests:
+          - unique
+          - not_null
+      - name: customer_id
+        data_tests:
+          - relationships:
+              to: ref('dim_customer')
+              field: customer_id
