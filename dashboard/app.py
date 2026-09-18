@@ -154,30 +154,85 @@ with tab2:
 with tab3:
     st.subheader("Monthly MRR movement (assumed pricing)")
     mrr = q("""
-        select
-            strftime('%Y-%m', event_date) as month,
-            sum(case when derived_direction = 'upgrade'       then greatest(mrr_delta, 0) else 0 end) as expansion,
-            sum(case when derived_direction = 'downgrade'     then least(mrr_delta, 0)    else 0 end) as contraction,
-            sum(case when derived_direction = 'cancellation'  then mrr_delta              else 0 end) as churn_loss
-        from fact_subscription_event
-        where not is_event_after_churn
-        group by month
-        order by month
+        with movements as (
+            -- 1) New business: each signup adds its initial plan's price
+            select
+                strftime('%Y-%m', d.signup_date) as month,
+                'new' as movement,
+                sum(p.assumed_monthly_price) as mrr_change
+            from dim_customer d
+            join dim_plan p on d.initial_plan = p.plan
+            group by 1, 2
+
+            union all
+
+            -- 2) Expansion / contraction / churn from plan-change events
+            select
+                strftime('%Y-%m', event_date) as month,
+                case derived_direction
+                    when 'upgrade'      then 'expansion'
+                    when 'downgrade'    then 'contraction'
+                    when 'cancellation' then 'churn_loss'
+                end as movement,
+                sum(case derived_direction
+                        when 'upgrade'      then greatest(mrr_delta, 0)
+                        when 'downgrade'    then least(mrr_delta, 0)
+                        when 'cancellation' then mrr_delta
+                    end) as mrr_change
+            from fact_subscription_event
+            where not is_event_after_churn
+              and derived_direction <> 'no_change'
+            group by 1, 2
+        )
+        select month, movement, round(sum(mrr_change), 0) as mrr_change
+        from movements
+        group by 1, 2
+        order by 1, 2
     """)
-    fig = px.bar(
-        mrr,
-        x="month",
-        y=["expansion", "contraction", "churn_loss"],
-        barmode="group",
-        labels={"value": "MRR change ($/month)", "variable": "Movement", "month": "Month"},
-        color_discrete_map={
-            "expansion": "#2ca02c",
-            "contraction": "#ff7f0e",
-            "churn_loss": "#d62728",
-        },
+
+    order  = ['new', 'expansion', 'contraction', 'churn_loss']
+    labels = {
+        'new':          'New business',
+        'expansion':    'Expansion (upgrades)',
+        'contraction':  'Contraction (downgrades)',
+        'churn_loss':   'Churned MRR',
+    }
+    colors = {
+        'new':          '#1f77b4',
+        'expansion':    '#2ca02c',
+        'contraction':  '#ff7f0e',
+        'churn_loss':   '#d62728',
+    }
+
+    pivot = mrr.pivot(index='month', columns='movement',
+                      values='mrr_change').fillna(0)
+    for col in order:                      # guarantee all 4 columns exist
+        if col not in pivot.columns:
+            pivot[col] = 0.0
+    pivot = pivot[order]
+    pivot['ending_mrr'] = pivot[order].sum(axis=1).cumsum()
+
+    fig = go.Figure()
+    for col in order:
+        fig.add_trace(go.Bar(name=labels[col], x=pivot.index, y=pivot[col],
+                             marker_color=colors[col]))
+    fig.add_trace(go.Scatter(name='Ending MRR', x=pivot.index,
+                             y=pivot['ending_mrr'], mode='lines',
+                             yaxis='y2', line=dict(color='white', width=2)))
+    fig.update_layout(
+        barmode='stack',
+        xaxis_title='Month',
+        yaxis_title='MRR change ($/month)',
+        yaxis2=dict(title='Ending MRR ($/month)', overlaying='y', side='right'),
+        legend_title='Movement',
+        height=520,
     )
     st.plotly_chart(fig, use_container_width=True)
-
+    st.caption(
+        "New business = signups x initial plan price; ending MRR (white line) is the "
+        "cumulative sum of all four movements. Prices are assumptions (dim_plan), so "
+        "treat dollar levels as illustrative - the *mix* of movements is the real signal."
+    )
 # --------------------------------------------------------------- TAB 4
 with tab4:
     st.subheader("Active customers: health score vs usage trend")
