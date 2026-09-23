@@ -238,18 +238,21 @@ with tab3:
 with tab4:
     st.subheader("Active customers: health score vs usage trend")
     risk = q("""
-        select
-            customer_id,
-            acquisition_channel,
-            current_plan,
-            risk_segment,
-            latest_health_score,
-            latest_logins_slope_3m,
-            company_size_employees
+        select customer_id, acquisition_channel, current_plan, risk_segment,
+               latest_health_score, latest_logins_slope_3m,
+               company_size_employees, months_since_last_active
         from dim_customer
-        where not is_churned
-          and latest_health_score is not null
+        where not is_churned and latest_health_score is not null
     """)
+
+    c1, c2, c3 = st.columns(3)
+    for col, seg in zip((c1, c2, c3), ("high_risk", "watch", "healthy")):
+        col.metric(seg.replace("_", " ").title(), int((risk.risk_segment == seg).sum()))
+
+    risk["risk_segment"] = pd.Categorical(
+        risk.risk_segment, categories=["high_risk", "watch", "healthy"], ordered=True
+    )
+
     fig = px.scatter(
         risk,
         x="latest_logins_slope_3m",
@@ -257,21 +260,28 @@ with tab4:
         color="risk_segment",
         size="company_size_employees",
         size_max=18,
-        hover_data=["customer_id", "acquisition_channel", "current_plan"],
-        labels={
-            "latest_logins_slope_3m": "Usage trend (3-month slope of logins)",
-            "latest_health_score": "Health score (0-100)",
-        },
+        opacity=0.75,
+        hover_data=["customer_id", "acquisition_channel",
+                    "current_plan", "months_since_last_active"],
+        labels={"latest_logins_slope_3m": "Usage trend (3-month slope of logins)",
+                "latest_health_score": "Health score (0-100)"},
+        color_discrete_map={"high_risk": "#d62728",
+                            "watch": "#ff7f0e",
+                            "healthy": "#1f77b4"},
     )
     fig.add_vline(x=0, line_dash="dot", line_color="gray")
-    fig.add_hline(y=50, line_dash="dot", line_color="gray")
+    fig.add_hline(y=60, line_dash="dot", line_color="gray")
     st.plotly_chart(fig, use_container_width=True)
+    st.caption(
+        "high_risk = health < 60 (usage already collapsed; slope ~0, so health drives the flag). "
+        "watch = health 60-79 or slope < -1 (decline in progress). "
+        "Customers with months_since_last_active > 2 and no cancellation event are "
+        "'silent churns' the CRM never recorded."
+    )
 
-    st.markdown("**Top 20 highest-risk active customers (lowest health score first)**")
+    st.markdown("**Top 20 customers to check on (lowest health first)**")
     st.dataframe(
-        risk[risk["risk_segment"] == "high_risk"]
-        .sort_values("latest_health_score")
-        .head(20),
+        risk.sort_values(["latest_health_score", "latest_logins_slope_3m"]).head(20),
         use_container_width=True,
         hide_index=True,
     )
